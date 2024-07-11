@@ -1,6 +1,114 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  width: 70%;
   margin: 0 auto;
-  width: 60%;
+  padding: 20px 0;
+}
+
+.header-top,
+.header-bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: grey;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+
+.header-top {
+  margin-bottom: 20px;
+}
+.header-bottom {
+  margin-top: 3rem;
+  gap: 4rem;
+}
+
+.header-top span {
+  margin-left: 10px;
+}
+
+.dark-mode-span {
+  cursor: pointer;
+}
+
+.dark-mode-span:hover {
+  color: black;
+  transition: all 0.5s;
+}
+
+.header-top .divider {
+  margin: 0 10px;
+}
+
+.header-bottom button {
+  margin-left: 10px;
+}
+.skills-btn,
+.projects-btn,
+.hire-me-btn {
+  border: none;
+  background-color: inherit;
+  font-size: 1.1rem;
+  color: grey;
+  cursor: pointer;
+}
+
+.skills-btn:hover {
+  color: black;
+  transition: all 0.5s;
+}
+.projects-btn:hover {
+  color: black;
+  transition: all 0.5s;
+}
+
+.hire-me-btn:hover {
+  color: blue;
+  transition: all 0.5s;
+}
+
+.hire-me-btn {
+  border: 1px solid blue;
+  padding: 12px 23px;
+  border-radius: 5px;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .skills-btn:hover,
+body.dark-mode .projects-btn:hover,
+body.dark-mode .hire-me-btn:hover {
+  color: white;
+}
+
+.header-top .dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-top .dark-mode-toggle span {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+.header-top .dark-mode-toggle .icon {
+  transition: transform 0.3s ease;
+}
+
+.header-top .dark-mode-toggle .moon-icon {
+  transform: translateX(0);
+}
+
+.header-top .dark-mode-toggle .sun-icon {
+  transform: translateX(-20px);
+}
+
+.header-top .dark-mode-toggle .moon-icon.active {
+  transform: translateX(-20px);
+}
+
+.header-top .dark-mode-toggle .sun-icon.active {
+  transform: translateX(0);
 }
