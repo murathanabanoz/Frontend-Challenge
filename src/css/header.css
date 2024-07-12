@@ -1,3 +1,10 @@
+/* src/css/header.css */
+
+.body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 .header {
   width: 70%;
   margin: 0 auto;
@@ -17,31 +24,34 @@
 .header-top {
   margin-bottom: 20px;
 }
+
 .header-bottom {
   margin-top: 3rem;
-  gap: 4rem;
+  position: relative; /* Yeni eklenen satır */
 }
 
-.header-top span {
-  margin-left: 10px;
-}
-
-.dark-mode-span {
-  cursor: pointer;
-}
-
-.dark-mode-span:hover {
-  color: black;
-  transition: all 0.5s;
-}
-
-.header-top .divider {
-  margin: 0 10px;
+.letter-a {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%) rotate(25deg);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7b76cb;
+  background-color: rgb(218, 233, 243);
+  border-radius: 50%;
+  padding: 15px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-bottom button {
   margin-left: 10px;
 }
+
 .skills-btn,
 .projects-btn,
 .hire-me-btn {
@@ -52,17 +62,9 @@
   cursor: pointer;
 }
 
-.skills-btn:hover {
-  color: black;
-  transition: all 0.5s;
-}
+.skills-btn:hover,
 .projects-btn:hover {
   color: black;
-  transition: all 0.5s;
-}
-
-.hire-me-btn:hover {
-  color: blue;
   transition: all 0.5s;
 }
 
@@ -70,4 +72,21 @@
   border: 1px solid blue;
   padding: 12px 23px;
   border-radius: 5px;
+}
+
+.hire-me-btn:hover {
+  color: blue;
+  transition: all 0.5s;
+}
+
+/* Dark mode specific styles */
+.header.dark {
+  color: white;
+}
+
+.header.dark .dark-mode-span:hover,
+.header.dark .skills-btn:hover,
+.header.dark .projects-btn:hover,
+.header.dark .hire-me-btn:hover {
+  color: grey;
 }

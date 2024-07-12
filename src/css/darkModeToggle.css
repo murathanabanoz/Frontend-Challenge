@@ -1,0 +1,60 @@
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.mode-toggle {
+  width: 55px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 12px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2px;
+}
+
+.icon-container {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.icon-container.light {
+  left: 0;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.icon-container.dark {
+  left: calc(100% - 24px);
+  background-color: darkblue;
+  border-radius: 50%;
+}
+
+.icon {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-text {
+  margin-left: 10px;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
