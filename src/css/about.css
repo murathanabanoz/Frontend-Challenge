@@ -1,0 +1,122 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.about-content-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: start;
+}
+
+.about-content-right {
+  flex: 1;
+  text-align: right;
+}
+
+.about-name {
+  font-size: 15px;
+  color: rgba(67, 56, 202, 1);
+  margin-bottom: 20px;
+  font-family: "Inter";
+  line-height: 28px;
+}
+
+.about-name::before {
+  content: "";
+  display: inline-block;
+  width: 15%;
+  border-bottom: 1px solid rgba(67, 56, 202, 1);
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.about-h1 {
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  margin-top: 0;
+  font-family: "Inter";
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.about-paragraf {
+  font-size: 0.9rem;
+  color: rgba(107, 114, 128, 1);
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Inter";
+  width: 470px;
+  margin-top: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-family: "Inter";
+}
+
+.about-btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.about-hire-me-btn {
+  background-color: rgba(55, 48, 163, 1);
+  color: white;
+  font-size: 16px;
+  padding: 12px 40px;
+}
+
+.about-github-btn {
+  border: none;
+  border: 1px solid rgba(55, 48, 163, 1);
+  background-color: white;
+  color: rgba(55, 48, 163, 1);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 25px;
+}
+
+.about-github-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 26px;
+}
+
+.about-github-span {
+  vertical-align: middle;
+}
+
+.about-linkedin-btn {
+  border: 1px solid rgba(55, 48, 163, 1);
+  background-color: white;
+  color: rgba(55, 48, 163, 1);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 21px;
+}
+
+.about-linkedin-icon {
+  vertical-align: middle;
+  font-size: 26px;
+  color: rgba(55, 48, 163, 1);
+  margin-right: 10px;
+}
+
+.about-linkedin-span {
+  vertical-align: middle;
+}
+
+img {
+  height: 375px;
+  width: 476px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

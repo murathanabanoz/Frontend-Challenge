@@ -30,7 +30,7 @@
 
 .letter-a {
   position: absolute;
-  left: -30px;
+  left: 1px;
   top: 50%;
   transform: translateY(-50%) rotate(25deg);
   font-size: 2rem;
