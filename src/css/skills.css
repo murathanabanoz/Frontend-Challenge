@@ -1,0 +1,31 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  font-family: "Inter";
+}
+
+.skills-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.skill-item {
+  flex: 1;
+}
+
+.skills-top-h1 {
+  color: rgba(31, 41, 55, 1);
+  margin-bottom: 0;
+}
+
+.skill-item-h2 {
+  color: rgba(67, 56, 202, 1);
+}
+
+.skill-item-p {
+  color: rgba(107, 114, 128, 1);
+  font-size: 13px;
+}
