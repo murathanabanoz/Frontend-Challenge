@@ -1,0 +1,32 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+
+.profile.top {
+  background-color: aquamarine;
+}
+.profile-bottom {
+  display: flex;
+  flex-direction: row;
+  background-color: beige;
+}
+.profile-bottom-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: blueviolet;
+}
+
+.profile-bottom-right {
+  flex: 2;
+}
+.profile-bottom-left-line {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  background-color: bisque;
+}
