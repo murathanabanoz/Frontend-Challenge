@@ -3,30 +3,56 @@
   flex-direction: column;
   width: 70%;
   margin: 0 auto;
-  background-color: antiquewhite;
 }
-
-.profile.top {
-  background-color: aquamarine;
+.profile-horizontal {
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(186, 178, 231, 1);
 }
 .profile-bottom {
   display: flex;
   flex-direction: row;
-  background-color: beige;
+  gap: 100px;
 }
 .profile-bottom-left {
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: blueviolet;
 }
 
 .profile-bottom-right {
   flex: 2;
 }
-.profile-bottom-left-line {
+
+.profile-bottom-left-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-bottom-left-bottom-content {
   display: flex;
   flex-direction: row;
-  vertical-align: middle;
-  background-color: bisque;
+}
+.profile-bottom-left-bottom-content-left,
+.profile-bottom-left-bottom-content-right {
+  flex: 1;
+}
+
+.profile-bottom-right p {
+  color: rgba(107, 114, 128, 1);
+  font-size: 14px;
+  font-family: "Inter";
+}
+
+.profile-bottom-left-bottom-content-left {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.profile-bottom-left-bottom-content-right {
+  font-family: "Inter";
+  font-weight: 400;
 }
