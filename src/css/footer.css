@@ -1,0 +1,60 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  font-family: "Inter";
+}
+.footer {
+  width: 100%;
+  margin: 0;
+  background-color: rgba(249, 249, 249, 1);
+  height: 235px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-top-h1 {
+  width: 40%;
+  margin-top: 50px;
+  color: rgba(31, 41, 55, 1);
+}
+.footer-bottom-right a {
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.personal-blog {
+  color: rgba(10, 10, 20, 1);
+}
+
+.github {
+  color: rgba(0, 171, 107, 1);
+}
+
+.linkedin {
+  color: rgba(0, 119, 181, 1);
+}
+
+.email {
+  color: rgba(175, 12, 72, 1);
+  border-bottom: 2px solid rgba(175, 12, 72, 1);
+  font-weight: 600;
+}
+.footer-bottom-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.e-mail-bölümü {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}

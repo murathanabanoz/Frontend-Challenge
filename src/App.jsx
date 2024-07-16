@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About.jsx";
+import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Profile from "./components/Profile.jsx";
 import Skills from "./components/Skills.jsx";
@@ -11,6 +12,7 @@ function App() {
       <About />
       <Skills />
       <Profile />
+      <Footer />
     </>
   );
 }

@@ -46,9 +46,6 @@ function Profile() {
                   Frontend developer
                 </div>
               </div>
-              <div></div>
-              <div></div>
-              <div></div>
             </div>
           </div>
           <div className="profile-bottom-right">
