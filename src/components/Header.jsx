@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import DarkModeToggle from "./DarkModeToggle";
+import { switchLanguage } from "../slice";
 import "../css/header.css";
 
 const Header = () => {
-  const [language, setLanguage] = useState("Eng");
+  const dispatch = useDispatch();
+  const language = useSelector((state) => state.language.language);
 
-  const switchLanguage = () => {
-    setLanguage(language === "Eng" ? "Tr" : "Eng");
+  const handleLanguageSwitch = () => {
+    dispatch(switchLanguage());
   };
 
   return (
@@ -14,7 +17,7 @@ const Header = () => {
       <div className="header-top">
         <DarkModeToggle />
         <span className="divider">|</span>
-        <span onClick={switchLanguage} style={{ cursor: "pointer" }}>
+        <span onClick={handleLanguageSwitch} style={{ cursor: "pointer" }}>
           <span style={{ color: "blue", marginLeft: "-10px" }}>
             {language === "Eng" ? "Türkçe" : "Eng"}
           </span>
