@@ -11,7 +11,7 @@ function Profile() {
         <div className="profile-bottom">
           <div className="profile-bottom-left">
             <div className="profile-bottom-left-top">
-              <h2 style={{ color: "rgba(67, 56, 202, 1)" }}>Profile</h2>
+              <h2>Profile</h2>
             </div>
             <div className="profile-bottom-left-bottom">
               <div className="profile-bottom-left-bottom-content">
@@ -49,7 +49,7 @@ function Profile() {
             </div>
           </div>
           <div className="profile-bottom-right">
-            <h2 style={{ color: "rgba(67, 56, 202, 1)" }}>About Me</h2>
+            <h2>About Me</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
               dolorem consectetur vitae tempora architecto amet cupiditate qui.

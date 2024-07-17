@@ -19,7 +19,9 @@ const DarkModeToggle = () => {
           <span className="icon">{darkMode ? "🌙" : "☀️"}</span>
         </div>
       </div>
-      <span className="dark-mode-text">DARK MODE</span>
+      <span className="dark-mode-text">
+        {darkMode ? "LIGHT MODE" : "DARK MODE"}
+      </span>
     </div>
   );
 };

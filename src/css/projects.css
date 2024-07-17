@@ -81,3 +81,41 @@
 .links-group a:hover {
   text-decoration: underline;
 }
+
+body.dark-mode .projects-container {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .projects-top h1 {
+  color: white;
+}
+
+body.dark-mode .projects-bottom-content {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .projects-bottom-content h2 {
+  color: lightgray;
+}
+
+body.dark-mode .projects-bottom-content p {
+  color: lightgray;
+}
+
+body.dark-mode .button-group button {
+  color: black;
+  border: 1px solid white;
+}
+
+body.dark-mode .button-group button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .links-group a {
+  color: white;
+}
+
+body.dark-mode .links-group a:hover {
+  text-decoration: underline;
+}

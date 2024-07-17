@@ -1,34 +1,53 @@
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 70%;
-  font-family: "Inter";
-}
 .footer {
   width: 100%;
-  margin: 0;
-  background-color: rgba(249, 249, 249, 1);
-  height: 235px;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+  border-top: 1px solid #e0e0e0;
 }
 
-.footer-bottom {
+.footer-container {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer-top {
+  margin-bottom: 20px;
 }
 
 .footer-top-h1 {
-  width: 40%;
-  margin-top: 50px;
-  color: rgba(31, 41, 55, 1);
+  width: 30%;
+  text-align: left;
+  color: #333;
 }
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-bottom-left,
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+}
+
+.e-mail-bölümü {
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  margin-left: 10px;
+  color: rgba(175, 12, 72, 1);
+}
+
 .footer-bottom-right a {
+  margin-left: 20px;
   text-decoration: none;
-  margin: 0 5px;
-  font-size: 15px;
-  cursor: pointer;
-  font-weight: 600;
 }
 
 .personal-blog {
@@ -42,19 +61,33 @@
 .linkedin {
   color: rgba(0, 119, 181, 1);
 }
-
-.email {
-  color: rgba(175, 12, 72, 1);
-  border-bottom: 2px solid rgba(175, 12, 72, 1);
-  font-weight: 600;
-}
-.footer-bottom-left {
-  display: flex;
-  flex-direction: row;
+.footer-bottom-right a:hover {
+  text-decoration: underline;
 }
 
-.e-mail-bölümü {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
+.footer-text {
+  text-align: center;
+  color: rgba(107, 114, 128, 1);
+  font-size: 14px;
+}
+
+body.dark-mode .footer {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .footer-top-h1 {
+  color: white;
+}
+
+body.dark-mode .footer-bottom-right a {
+  color: white;
+}
+
+body.dark-mode .footer-bottom-right a:hover {
+  text-decoration: underline;
+}
+
+body.dark-mode .footer-text {
+  color: lightgray;
 }

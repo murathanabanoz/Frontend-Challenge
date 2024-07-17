@@ -24,6 +24,14 @@
   flex: 2;
 }
 
+.profile-bottom-left-top h2 {
+  color: rgba(67, 56, 202, 1);
+}
+
+.profile-bottom-right h2 {
+  color: rgba(67, 56, 202, 1);
+}
+
 .profile-bottom-left-bottom {
   display: flex;
   flex-direction: column;
@@ -55,4 +63,33 @@
 .profile-bottom-left-bottom-content-right {
   font-family: "Inter";
   font-weight: 400;
+}
+
+body.dark-mode .profile-container {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .profile-horizontal {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .profile-bottom-right p {
+  color: lightgray;
+}
+
+body.dark-mode .profile-bottom-left-bottom-content-left {
+  color: white;
+}
+
+body.dark-mode .profile-bottom-left-bottom-content-right {
+  color: lightgray;
+}
+
+body.dark-mode .profile-bottom-left-top h2 {
+  color: white;
+}
+
+body.dark-mode .profile-bottom-right h2 {
+  color: white;
 }
