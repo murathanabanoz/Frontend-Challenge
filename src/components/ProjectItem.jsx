@@ -1,4 +1,3 @@
-// ProjectItem.js
 import React from "react";
 
 function ProjectItem({ image, title, description, githubLink, viewLink }) {
@@ -8,9 +7,9 @@ function ProjectItem({ image, title, description, githubLink, viewLink }) {
       <h2>{title}</h2>
       <p>{description}</p>
       <div className="button-group">
-        <button>Button 1</button>
-        <button>Button 2</button>
-        <button>Button 3</button>
+        <button>React</button>
+        <button>Redux</button>
+        <button>Axios</button>
       </div>
       <div className="links-group">
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
