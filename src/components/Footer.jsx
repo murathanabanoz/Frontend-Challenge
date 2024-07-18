@@ -1,13 +1,17 @@
+import { useSelector } from "react-redux";
 import "../css/footer.css";
 
 function Footer() {
+  const language = useSelector((state) => state.language.language);
   return (
     <>
       <div className="footer">
         <div className="footer-container">
           <div className="footer-top">
             <h1 className="footer-top-h1">
-              Let's work together on your next product.
+              {language === "Eng"
+                ? "Let's work together on your next product."
+                : "Bir sonraki ürününüz üzerinde birlikte çalışalım."}
             </h1>
           </div>
           <div className="footer-bottom">
@@ -19,7 +23,7 @@ function Footer() {
             </div>
             <div className="footer-bottom-right">
               <a href="" className="personal-blog">
-                Personal Blog
+                {language === "Eng" ? "Personal blog" : "Kişisel blog"}
               </a>
               <a href="" className="github">
                 Github
@@ -30,7 +34,9 @@ function Footer() {
             </div>
           </div>
           <p className="footer-text">
-            © 2024 Murathan Abanoz. All rights reserved.
+            {language === "Eng"
+              ? "© 2024 Murathan Abanoz. All rights reserved."
+              : " © 2024 Murathan Abanoz. Tüm hakları saklıdır"}
           </p>
         </div>
       </div>

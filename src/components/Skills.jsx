@@ -7,7 +7,7 @@ function Skills() {
 
   return (
     <>
-      <div className="skills-container">
+      <div className="skills-container" id="skills">
         <div className="skills-top">
           <h1 className="skills-top-h1">
             {language === "Eng" ? "Skills" : "Yetenekler"}

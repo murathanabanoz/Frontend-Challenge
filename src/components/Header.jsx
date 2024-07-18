@@ -12,6 +12,19 @@ const Header = () => {
     dispatch(switchLanguage());
   };
 
+  const handleSkillsClick = () => {
+    const skillsSection = document.getElementById("skills");
+    if (skillsSection) {
+      skillsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleProjectsClick = () => {
+    const projectSection = document.getElementById("projects");
+    if (projectSection) {
+      projectSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="header">
       <div className="header-top">
@@ -26,10 +39,10 @@ const Header = () => {
       </div>
       <div className="header-bottom">
         <div className="letter-a">A</div>
-        <button className="skills-btn">
+        <button className="skills-btn" onClick={handleSkillsClick}>
           {language === "Eng" ? "Skills" : "Yetenekler"}
         </button>
-        <button className="projects-btn">
+        <button className="projects-btn" onClick={handleProjectsClick}>
           {language === "Eng" ? "Projects" : "Projeler"}
         </button>
         <button className="hire-me-btn">

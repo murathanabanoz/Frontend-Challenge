@@ -5,6 +5,12 @@
   flex-direction: column;
 }
 
+.projects-horizontal {
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(186, 178, 231, 1);
+}
+
 .projects-top h1 {
   font-size: 2em;
   margin-bottom: 20px;
@@ -12,16 +18,20 @@
 
 .projects-bottom {
   display: flex;
-  flex: 1;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 .projects-bottom-content {
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+  flex: 1;
+  min-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-image {
@@ -42,6 +52,7 @@
   text-align: left;
   color: rgba(107, 114, 128, 1);
   font-size: 15px;
+  flex: 1;
 }
 
 .button-group {
@@ -70,7 +81,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: auto;
 }
 
 .links-group a {
