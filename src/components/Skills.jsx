@@ -1,18 +1,25 @@
+import { useSelector } from "react-redux";
 import "../css/skills.css";
 import { skills } from "../Skills";
 
 function Skills() {
+  const language = useSelector((state) => state.language.language);
+
   return (
     <>
       <div className="skills-container">
         <div className="skills-top">
-          <h1 className="skills-top-h1">Skills</h1>
+          <h1 className="skills-top-h1">
+            {language === "Eng" ? "Skills" : "Yetenekler"}
+          </h1>
         </div>
         <div className="skills-bottom">
           {skills.map((item, index) => (
             <div key={index} className="skill-item">
               <h2 className="skill-item-h2">{item.skill}</h2>
-              <p className="skill-item-p">{item.text}</p>
+              <p className="skill-item-p">
+                {language === "Eng" ? item.text : item.text_tr}
+              </p>
             </div>
           ))}
         </div>

@@ -1,22 +1,24 @@
+import { useSelector } from "react-redux";
 import "../css/profile.css";
 
 function Profile() {
+  const language = useSelector((state) => state.language.language);
   return (
     <>
       <div className="profile-horizontal"></div>
       <div className="profile-container">
         <div className="profile-top">
-          <h1>Profile</h1>
+          <h1>{language === "Eng" ? "Profile" : "Profil"}</h1>
         </div>
         <div className="profile-bottom">
           <div className="profile-bottom-left">
             <div className="profile-bottom-left-top">
-              <h2>Profile</h2>
+              <h2>{language === "Eng" ? "Profile" : "Profil"}</h2>
             </div>
             <div className="profile-bottom-left-bottom">
               <div className="profile-bottom-left-bottom-content">
                 <div className="profile-bottom-left-bottom-content-left">
-                  Doğum tarihi
+                  {language === "Eng" ? "Date of birth" : "Doğum tarihi"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
                   12.09.1998
@@ -24,7 +26,7 @@ function Profile() {
               </div>
               <div className="profile-bottom-left-bottom-content">
                 <div className="profile-bottom-left-bottom-content-left">
-                  İkamet şehri
+                  {language === "Eng" ? "City ​​of residence" : "İkamet şehri"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
                   Trabzon
@@ -32,7 +34,9 @@ function Profile() {
               </div>
               <div className="profile-bottom-left-bottom-content">
                 <div className="profile-bottom-left-bottom-content-left">
-                  Eğitim durumu
+                  {language === "Eng"
+                    ? "Educational background"
+                    : "Eğitim durumu"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
                   Kocaeli ünv. RTS
@@ -40,7 +44,7 @@ function Profile() {
               </div>
               <div className="profile-bottom-left-bottom-content">
                 <div className="profile-bottom-left-bottom-content-left">
-                  Tercih ettiği rol
+                  {language === "Eng" ? "Preferred role" : "Tercih ettiği rol"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
                   Frontend developer
@@ -49,15 +53,16 @@ function Profile() {
             </div>
           </div>
           <div className="profile-bottom-right">
-            <h2>About Me</h2>
+            <h2>{language === "Eng" ? "About me" : "Hakkımda"}</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-              dolorem consectetur vitae tempora architecto amet cupiditate qui.
+              {language === "Eng"
+                ? "I closely follow developments in the technology world and can quickly adapt to new technologies. My openness to continuous learning and self-improvement keeps me always ready for new challenges."
+                : "Teknoloji dünyasındaki gelişmeleri yakından takip ediyor ve yeni teknolojilere hızla adapte olabiliyorum. Sürekli öğrenmeye ve kendimi geliştirmeye açık olmam, beni her zaman yeni meydan okumalara hazır tutuyor."}
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-              illum aperiam corporis quis optio quas iusto sequi maiores
-              necessitatibus.
+              {language === "Eng"
+                ? "My goal is to use my technical skills and creativity to develop solutions that address real user needs, continually pushing forward in this process. If you're interested in working with me, please feel free to reach out!"
+                : "Hedefim, teknik bilgilerimi ve yaratıcılığımı kullanarak, kullanıcıların gerçek ihtiyaçlarına yönelik çözümler üretmek ve bu süreçte sürekli olarak ileriye gitmek. Eğer siz de benimle çalışmak isterseniz, lütfen bana ulaşmaktan çekinmeyin!"}
             </p>
           </div>
         </div>

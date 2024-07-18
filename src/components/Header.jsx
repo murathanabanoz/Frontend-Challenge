@@ -33,7 +33,7 @@ const Header = () => {
           {language === "Eng" ? "Projects" : "Projeler"}
         </button>
         <button className="hire-me-btn">
-          {language === "Eng" ? "Hire me" : "Hakkımda"}
+          {language === "Eng" ? "Hire me" : "İşe al"}
         </button>
       </div>
     </div>
