@@ -4,10 +4,10 @@ import "../css/profile.css";
 function Profile() {
   const language = useSelector((state) => state.language.language);
 
-  const { Doğum_tarihi } = useSelector((state) => state.profile);
-  const { İkametgah } = useSelector((state) => state.profile);
-  const { Eğitim_durumu } = useSelector((state) => state.profile);
-  const { Tercih_ettiği_rol } = useSelector((state) => state.profile);
+  const { dogum_tarihi } = useSelector((state) => state.profile);
+  const { ikametgah } = useSelector((state) => state.profile);
+  const { egitim_durumu } = useSelector((state) => state.profile);
+  const { tercih_ettigi_rol } = useSelector((state) => state.profile);
 
   return (
     <>
@@ -27,7 +27,7 @@ function Profile() {
                   {language === "Eng" ? "Date of birth" : "Doğum tarihi"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
-                  {Doğum_tarihi}
+                  {dogum_tarihi}
                 </div>
               </div>
               <div className="profile-bottom-left-bottom-content">
@@ -35,7 +35,7 @@ function Profile() {
                   {language === "Eng" ? "City ​​of residence" : "İkamet şehri"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
-                  {İkametgah}
+                  {ikametgah}
                 </div>
               </div>
               <div className="profile-bottom-left-bottom-content">
@@ -45,7 +45,7 @@ function Profile() {
                     : "Eğitim durumu"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
-                  {Eğitim_durumu}
+                  {egitim_durumu}
                 </div>
               </div>
               <div className="profile-bottom-left-bottom-content">
@@ -53,7 +53,7 @@ function Profile() {
                   {language === "Eng" ? "Preferred role" : "Tercih ettiği rol"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
-                  {Tercih_ettiği_rol}
+                  {tercih_ettigi_rol}
                 </div>
               </div>
             </div>
