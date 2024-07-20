@@ -3,6 +3,12 @@ import "../css/profile.css";
 
 function Profile() {
   const language = useSelector((state) => state.language.language);
+
+  const { Doğum_tarihi } = useSelector((state) => state.profile);
+  const { İkametgah } = useSelector((state) => state.profile);
+  const { Eğitim_durumu } = useSelector((state) => state.profile);
+  const { Tercih_ettiği_rol } = useSelector((state) => state.profile);
+
   return (
     <>
       <div className="profile-horizontal"></div>
@@ -21,7 +27,7 @@ function Profile() {
                   {language === "Eng" ? "Date of birth" : "Doğum tarihi"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
-                  12.09.1998
+                  {Doğum_tarihi}
                 </div>
               </div>
               <div className="profile-bottom-left-bottom-content">
@@ -29,7 +35,7 @@ function Profile() {
                   {language === "Eng" ? "City ​​of residence" : "İkamet şehri"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
-                  Trabzon
+                  {İkametgah}
                 </div>
               </div>
               <div className="profile-bottom-left-bottom-content">
@@ -39,7 +45,7 @@ function Profile() {
                     : "Eğitim durumu"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
-                  Kocaeli ünv. RTS
+                  {Eğitim_durumu}
                 </div>
               </div>
               <div className="profile-bottom-left-bottom-content">
@@ -47,7 +53,7 @@ function Profile() {
                   {language === "Eng" ? "Preferred role" : "Tercih ettiği rol"}
                 </div>
                 <div className="profile-bottom-left-bottom-content-right">
-                  Frontend developer
+                  {Tercih_ettiği_rol}
                 </div>
               </div>
             </div>
