@@ -70,10 +70,6 @@ body.dark-mode .profile-container {
   color: white;
 }
 
-/* body.dark-mode .profile-horizontal {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-} */
-
 body.dark-mode .profile-bottom-right p {
   color: lightgray;
 }
@@ -92,4 +88,35 @@ body.dark-mode .profile-bottom-left-top h2 {
 
 body.dark-mode .profile-bottom-right h2 {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    width: 90%;
+  }
+
+  .profile-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-horizontal {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-bottom-left-top h2,
+  .profile-bottom-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-bottom-left-bottom-content-left,
+  .profile-bottom-left-bottom-content-right {
+    font-size: 0.9rem;
+  }
+
+  .profile-bottom-right p {
+    font-size: 0.9rem;
+  }
 }

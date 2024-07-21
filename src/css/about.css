@@ -164,3 +164,60 @@ body.dark-mode .about-linkedin-btn {
 body.dark-mode .about-linkedin-icon {
   color: white;
 }
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .about-content-left,
+  .about-content-right {
+    flex: unset;
+    text-align: center;
+  }
+
+  .about-paragraf {
+    width: 100%;
+  }
+
+  .buttons {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .about-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 10px 0;
+  }
+
+  .about-h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .about-paragraf {
+    font-size: 0.8rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-btn {
+    width: 100%;
+  }
+}

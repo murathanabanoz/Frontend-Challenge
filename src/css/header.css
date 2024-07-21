@@ -87,3 +87,70 @@
 .header.dark .hire-me-btn:hover {
   color: grey;
 }
+
+@media (max-width: 768px) {
+  .header {
+    width: 90%;
+  }
+
+  .header-top,
+  .header-bottom {
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header-bottom {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .letter-a {
+    position: relative;
+    transform: none;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills-btn,
+  .projects-btn,
+  .hire-me-btn {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  .hire-me-btn {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .header-top,
+  .header-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .skills-btn,
+  .projects-btn,
+  .hire-me-btn {
+    font-size: 0.9rem;
+  }
+
+  .hire-me-btn {
+    padding: 8px 16px;
+  }
+}

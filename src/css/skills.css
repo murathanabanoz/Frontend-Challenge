@@ -46,3 +46,31 @@ body.dark-mode .skill-item-h2 {
 body.dark-mode .skill-item-p {
   color: white;
 }
+
+@media (max-width: 768px) {
+  .skills-container {
+    width: 90%;
+  }
+
+  .skills-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Boşlukları küçülttük */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Boşlukları küçülttük */
+  }
+
+  .skill-item-h2 {
+    font-size: 1.5rem; /* Başlık font boyutunu küçülttük */
+  }
+
+  .skill-item-p {
+    font-size: 12px; /* Paragraf font boyutunu küçülttük */
+  }
+}
