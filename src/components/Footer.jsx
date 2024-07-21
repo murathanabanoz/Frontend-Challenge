@@ -4,7 +4,9 @@ import "../css/footer.css";
 function Footer() {
   const language = useSelector((state) => state.language.language);
   const { Git_hub } = useSelector((state) => state.projectItem);
-  const { email, linkedin } = useSelector((state) => state.footer);
+  const { email, linkedin, githubLink, linkedinLink } = useSelector(
+    (state) => state.footer
+  );
 
   return (
     <>
@@ -28,10 +30,20 @@ function Footer() {
               <a href="" className="personal-blog">
                 {language === "Eng" ? "Personal blog" : "Kişisel blog"}
               </a>
-              <a href="" className="github">
+              <a
+                href={githubLink}
+                className="github"
+                target="blank"
+                rel="noopener noreferrer"
+              >
                 {Git_hub}
               </a>
-              <a href="" className="linkedin">
+              <a
+                href={linkedinLink}
+                className="linkedin"
+                target="blank"
+                rel="noopener noreferrer"
+              >
                 {linkedin}
               </a>
             </div>

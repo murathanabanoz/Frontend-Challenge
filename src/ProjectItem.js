@@ -6,6 +6,7 @@ const initialState = {
   Axios_btn: "Axios",
   Git_hub: "Github",
   View_Link: "View Site",
+  Name: "Murathan Abanoz",
 };
 
 const projectItemSlice = createSlice({
