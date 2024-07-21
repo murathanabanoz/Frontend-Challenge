@@ -55,7 +55,7 @@ body.dark-mode .skill-item-p {
   .skills-bottom {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Boşlukları küçülttük */
+    gap: 20px;
   }
 }
 
@@ -63,14 +63,14 @@ body.dark-mode .skill-item-p {
   .skills-bottom {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Boşlukları küçülttük */
+    gap: 15px;
   }
 
   .skill-item-h2 {
-    font-size: 1.5rem; /* Başlık font boyutunu küçülttük */
+    font-size: 1.5rem;
   }
 
   .skill-item-p {
-    font-size: 12px; /* Paragraf font boyutunu küçülttük */
+    font-size: 12px;
   }
 }

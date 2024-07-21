@@ -90,7 +90,8 @@
 }
 
 .links-group a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(92, 108, 108);
 }
 
 body.dark-mode .projects-container {
