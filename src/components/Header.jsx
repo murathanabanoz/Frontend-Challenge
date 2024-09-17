@@ -15,14 +15,22 @@ const Header = () => {
   const handleSkillsClick = () => {
     const skillsSection = document.getElementById("skills");
     if (skillsSection) {
-      skillsSection.scrollIntoView({ behavior: "smooth" });
+      skillsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
     }
   };
 
   const handleProjectsClick = () => {
     const projectSection = document.getElementById("projects");
     if (projectSection) {
-      projectSection.scrollIntoView({ behavior: "smooth" });
+      projectSection.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
     }
   };
   return (
