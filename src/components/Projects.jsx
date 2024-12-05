@@ -34,8 +34,8 @@ const projectsData = [
       "A dynamic pizza ordering application that allows users to customize their pizzas by selecting from various toppings, sizes, and crust types. The project features an intuitive user interface, real-time order updates, and a secure payment system. Built using React.js for the front-end and Node.js with Express for the back-end, the application ensures a seamless and efficient ordering experience.",
     descriptionTr:
       "Kullanıcıların çeşitli malzemeler, boyutlar ve hamur türleri arasından seçim yaparak pizzalarını özelleştirmelerine olanak tanıyan dinamik bir pizza sipariş uygulaması. Proje, kullanıcı dostu bir arayüz, gerçek zamanlı sipariş güncellemeleri ve güvenli bir ödeme sistemi sunar. Front-end için React.js ve back-end için Node.js ile Express kullanılarak oluşturulan uygulama, sorunsuz ve verimli bir sipariş deneyimi sağlar.",
-    githubLink: "https://github.com/Murathan722/fsweb-s7-challenge-pizza",
-    viewLink: "https://fsweb-s7-challenge-pizza-seven-rho.vercel.app/",
+    githubLink: "https://github.com/murathanabanoz/Pizza-Siparis",
+    viewLink: "https://pizza-siparis-cyan.vercel.app/",
   },
 ];
 

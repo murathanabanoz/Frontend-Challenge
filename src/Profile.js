@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   dogum_tarihi: "12.09.1998",
-  ikametgah: "Trabzon",
+  ikametgah: "İzmir / Türkiye",
   egitim_durumu: "Kocaeli ünv. RTS",
   tercih_ettigi_rol: "Frontend Developer",
 };
