@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "../css/projects.css";
 import ProjectItem from "./ProjectItem";
-import eCommerce from "../assets/e-commerce.png";
 
 const projectsData = [
   {
@@ -15,6 +14,7 @@ const projectsData = [
       "Basitlik ve kullanılabilirliğe odaklanarak HTML, CSS ve JavaScript ile bir To-Do List uygulaması geliştirdim. Uygulama, kullanıcıların görev ekleme, silme ve tamamlanan görevleri işaretleme işlemlerini yapabilmesine imkân tanır. Duyarlı tasarımı sayesinde farklı cihazlarda sorunsuz çalışır. Bu proje, DOM manipülasyonu, event handling (olay yönetimi) ve temel frontend geliştirme becerilerimi ortaya koymaktadır.",
     githubLink: "https://github.com/murathanabanoz/To-Do-List--JavaScript-",
     viewLink: "https://to-do-list-java-script-ten.vercel.app/",
+    buttons: ["Html", "Css", "JavaScript"],
   },
   {
     image:
@@ -26,6 +26,7 @@ const projectsData = [
       "React.js ile bir e-ticaret projesi geliştirdim. Projede ürünlerin listelenmesi, filtrelenmesi, sepete eklenmesi ve silinmesi gibi temel işlevler yer alıyor. Component tabanlı yapı sayesinde kodun okunabilirliğini artırdım ve yeniden kullanılabilirliği sağladım. State yönetimi için React Hooks kullandım. Ayrıca responsive tasarım sayesinde uygulama hem masaüstü hem de mobil cihazlarda sorunsuz bir şekilde çalışabiliyor.",
     githubLink: "https://github.com/murathanabanoz/e-ticaret-project",
     viewLink: "https://e-ticaret-project.vercel.app/",
+    buttons: ["React", "Redux", "Tailwind"],
   },
   {
     image:
@@ -37,6 +38,7 @@ const projectsData = [
       "Kullanıcıların çeşitli malzemeler, boyutlar ve hamur türleri arasından seçim yaparak pizzalarını özelleştirmelerine olanak tanıyan dinamik bir pizza sipariş uygulaması. Proje, kullanıcı dostu bir arayüz, gerçek zamanlı sipariş güncellemeleri ve güvenli bir ödeme sistemi sunar. Front-end için React.js ve back-end için Node.js ile Express kullanılarak oluşturulan uygulama, sorunsuz ve verimli bir sipariş deneyimi sağlar.",
     githubLink: "https://github.com/murathanabanoz/Pizza-Siparis",
     viewLink: "https://pizza-siparis-cyan.vercel.app/",
+    buttons: ["React", "Redux", "Axios"],
   },
 ];
 
@@ -61,6 +63,7 @@ function Projects() {
               }
               githubLink={project.githubLink}
               viewLink={project.viewLink}
+              buttons={project.buttons}
             />
           ))}
         </div>

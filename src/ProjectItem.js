@@ -4,6 +4,7 @@ const initialState = {
   React_btn: "React",
   Redux_btn: "Redux",
   Axios_btn: "Axios",
+  JavaScript_btn: "JavaScript",
   Git_hub: "Github",
   View_Link: "View Site",
   Name: "Murathan Abanoz",
